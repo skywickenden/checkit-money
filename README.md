@@ -41,7 +41,7 @@ To ensure that the vaule always has a decimal value:
       foo: ['money:true']
     });
     
-To allow the value to have a preceding symbol.
+To allow the value to have an optional preceding symbol. EG '£34.56'
 
     const checkit = new Checkit({
       foo: ['money:false:true']

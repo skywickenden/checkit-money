@@ -1,6 +1,6 @@
-var assert = require('assert');
-
+import assert from 'assert';
 import money from '../src/money';
+
 describe('Money', function() {
   describe('Default settings', function () {
     it('should be true when the value is an integer', function () {

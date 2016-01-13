@@ -2,8 +2,8 @@
  * value {string} The value that is passed in and being checked if
  * it is a valid money value.
  */
-export default function (value, mustIncludeDecimals=false, allowSymbol=false) {
-  const stringValue = value.toString();
+export default function money(value, mustIncludeDecimals=false, allowSymbol=false) {
+  let stringValue = value.toString();
   let valid = true;
 
   if (mustIncludeDecimals || stringValue.indexOf('.') === -1) {

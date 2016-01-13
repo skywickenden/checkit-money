@@ -6,7 +6,7 @@ export default function money(value, mustIncludeDecimals=false, allowSymbol=fals
   let stringValue = value.toString();
   let valid = true;
 
-  if (mustIncludeDecimals || stringValue.indexOf('.') === -1) {
+  if (mustIncludeDecimals || stringValue.indexOf('.') !== -1) {
     if (mustIncludeDecimals && stringValue.indexOf('.') === -1) {
       valid = false;
     } else {

@@ -1,2 +1,2 @@
-var money = require('lib/money');
+var money = require('./lib/money');
 module.exports = money;

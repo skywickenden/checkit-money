@@ -26,7 +26,7 @@ A money validator for [checkit](https://github.com/tgriesser/checkit)
       console.log(err.toJSON());
     });
     
-By default a number with an optional 2 decimal palces is accepted. Strigns and numbers are valid:
+By default a number with an optional 2 decimal palces is accepted. Strings and numbers are valid:
 
     34
     4.56

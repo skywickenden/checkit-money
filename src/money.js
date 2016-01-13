@@ -2,7 +2,12 @@
  * value {string} The value that is passed in and being checked if
  * it is a valid money value.
  */
-export default function money(value, mustIncludeDecimals=false, allowSymbol=false) {
+export default function money(value, mustIncludeDecimals, allowSymbol) {
+  // Using es6 defaults results in wierd behavoir due to the
+  // way checkit passes in paramaters.
+  if (mustIncludeDecimals === undefined) mustIncludeDecimals = false;
+  if (allowSymbol === undefined) allowSymbol = false;
+
   let stringValue = value.toString();
   let valid = true;
 

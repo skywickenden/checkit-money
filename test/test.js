@@ -19,6 +19,9 @@ describe('Money', function() {
     it('should be true when the value is a valid string.', function () {
       assert.equal(money('23.45'), true);
     });
+    it('should be true when the value is a valid string integer.', function () {
+      assert.equal(money('34'), true);
+    });
     it('should be false when the value is not a string or number.', function () {
       assert.equal(money({foo: 'bar'}), false);
       assert.equal(money(['foo']), false);

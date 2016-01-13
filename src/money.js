@@ -3,7 +3,7 @@
  * it is a valid money value.
  */
 export default function money(value, mustIncludeDecimals, allowSymbol) {
-  // Using es6 defaults results in wierd behavoir due to the
+  // Using es6 defaults results in weird behavior due to the
   // way checkit passes in paramaters.
   if (mustIncludeDecimals === undefined) mustIncludeDecimals = false;
   if (allowSymbol === undefined) allowSymbol = false;

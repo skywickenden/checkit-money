@@ -1,6 +1,6 @@
 # checkit-money
 
-A money validator for [checkit](https://github.com/tgriesser/checkit)
+A money / currency validator for [checkit](https://github.com/tgriesser/checkit)
 
 ### Installation
 
@@ -41,7 +41,7 @@ To ensure that the vaule always has a decimal value:
       foo: ['money:true']
     });
     
-To allow the value to have a preceeding symbol.
+To allow the value to have a preceding symbol.
 
     const checkit = new Checkit({
       foo: ['money:false:true']
